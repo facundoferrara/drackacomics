@@ -1,0 +1,18 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+
+# Uploads y cache
+/wp-content/uploads/
+/wp-content/cache/
+
+# Config sensible
+wp-config.php
+.env
+
+# Dependencias
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
