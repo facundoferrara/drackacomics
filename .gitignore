@@ -1,18 +1,19 @@
-# WordPress core
-/wp-admin/
-/wp-includes/
+# Ignore everything by default
+/*
 
-# Uploads y cache
-/wp-content/uploads/
-/wp-content/cache/
+# Allow git core files
+!.gitignore
+!README.md
 
-# Config sensible
-wp-config.php
-.env
+# Allow wp-content only
+!app/
+app/*
+!app/public/
+app/public/*
+!app/public/wp-content/
 
-# Dependencias
-node_modules/
-
-# Sistema
-.DS_Store
-Thumbs.db
+# Inside wp-content, ignore heavy/generated stuff
+app/public/wp-content/uploads/
+app/public/wp-content/cache/
+app/public/wp-content/upgrade/
+app/public/wp-content/backups/
